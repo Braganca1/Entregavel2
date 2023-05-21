@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Entrar</title>
+
+        <link rel="stylesheet" href="styles/header.css">
+
+        <link rel="stylesheet" href="styles/login.css">
+
+        <link rel="icon" href="images/grifo1.png">
+
+        <script src="scripts/sign_in.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="nav-left">
+                <img class="logo" src="images/mascote.png">
+            </div>
+
+            <div class="nav-right">
+                <div>
+                    <a href="sign_in.html">Criar conta</a>
+                </div>
+                
+                <div>
+                    <a href="login.html">Entrar</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Entrar</legend>
+                    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Nome do Usuário">
+                            
+                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Senha">
+                            
+                    <input type="submit" value="Entrar" id="login-form-submit" onclick="validate()">
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

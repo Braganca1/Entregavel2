@@ -57,8 +57,12 @@ fieldset legend {
     text-align: center;
 }
 
-input::placeholder, select {
-    color: rgba(0, 0, 0, 1);
+input::placeholder {
+    color: #636161;
+}
+
+input::select {
+    color: #000000;
 }
 
 .signin-form-field {
@@ -87,8 +91,8 @@ select {
     background-color: rgba(255, 255, 255, 1);
     border: none;
     border-radius: 5px;
-    height: 60%;
-    width: 50%;
+    height: 21px;
+    width: 70%;
     text-align: center;
 } 
 
@@ -96,8 +100,8 @@ select {
     background-color: rgba(255, 255, 255, 1);
     border: none;
     border-radius: 5px;
-    height: 10%;
-    width: 50%;
+    height: 11%;
+    width: 70%;
     color: rgba(0, 0, 0, 1);
 }
 
