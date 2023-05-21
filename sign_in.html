@@ -7,7 +7,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Criar conta</title>
+        <title>Cadastre-se</title>
 
         <link rel="stylesheet" href="styles/header.css">
 
@@ -26,19 +26,19 @@
 
             <div class="nav-right">
                 <div>
-                    <a href="sign_in.html">Criar conta</a>
+                    <a href="sign_in.html">Cadastre-se</a>
                 </div>
                 
                 <div>
-                    <a href="login.html">Entrar</a>
+                    <a href="login.html">Login</a>
                 </div>
             </div>
         </header>
 
         <main>
-            <form>
+            <form id="signin-form">
                 <fieldset>
-                    <legend>Criar conta</legend>
+                    <legend>Cadastro</legend>
                     <input type="text" name="username" id="username-field" class="signin-form-field" placeholder="Nome do Usuário">
                             
                     <input type="password" name="password" id="password-field" class="signin-form-field" placeholder="Senha">
@@ -54,7 +54,7 @@
                         </select>
                     </label>
                             
-                    <input type="submit" value="Cadastre-se" id="signin-form-submit" onclick="validate()">
+                    <button type="submit" id="signin-form-submit">Cadastre</button>
                 </fieldset>
             </form>
         </main>
