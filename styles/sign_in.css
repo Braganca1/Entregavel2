@@ -57,12 +57,8 @@ fieldset legend {
     text-align: center;
 }
 
-input::placeholder {
+input::placeholder, select, button {
     color: #636161;
-}
-
-input::select {
-    color: #000000;
 }
 
 .signin-form-field {
@@ -102,7 +98,6 @@ select {
     border-radius: 5px;
     height: 11%;
     width: 70%;
-    color: rgba(0, 0, 0, 1);
 }
 
 @media screen and (max-width: 500px) {

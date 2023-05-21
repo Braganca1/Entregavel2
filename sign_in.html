@@ -38,12 +38,12 @@
         <main>
             <form id="signin-form">
                 <fieldset>
-                    <legend>Cadastro</legend>
-                    <input type="text" name="username" id="username-field" class="signin-form-field" placeholder="Nome do Usuário">
+                    <legend>Criar Conta</legend>
+                    <input type="text" name="username" id="username-field" class="signin-form-field" placeholder="Nome do Usuário" required>
                             
-                    <input type="password" name="password" id="password-field" class="signin-form-field" placeholder="Senha">
+                    <input type="password" name="password" id="password-field" class="signin-form-field" placeholder="Senha" required>
                             
-                    <input type="password" name="password-confirm" id="password-confirm-field" class="signin-form-field" placeholder="Confirmar Senha">
+                    <input type="password" name="password-confirm" id="password-confirm-field" class="signin-form-field" placeholder="Confirmar Senha" required>
                             
                     <label>
                         <legend>Tipo de Usuário: </legend>
@@ -58,6 +58,5 @@
                 </fieldset>
             </form>
         </main>
-        <script src="localstorage.js"></script>
     </body>
 </html>

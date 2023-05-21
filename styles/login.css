@@ -57,7 +57,7 @@ fieldset legend {
     text-align: center;
 }
 
-input::placeholder, select {
+input::placeholder, select, button {
     color: #636161;
 }
 
@@ -98,7 +98,6 @@ select {
     border-radius: 5px;
     height: 15%;
     width: 50%;
-    color: rgba(0, 0, 0, 1);
 }
 
 @media screen and (max-width: 500px) {
