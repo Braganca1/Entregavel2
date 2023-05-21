@@ -57,7 +57,7 @@ fieldset legend {
     text-align: center;
 }
 
-input::placeholder, select, button {
+input::placeholder{
     color: #636161;
 }
 
