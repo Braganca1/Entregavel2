@@ -11,6 +11,7 @@ function handleLoginForm(event) {
             const typeUser = storedUsers[username].typeUser;
             let welcome = `Bem-vindo ${typeUser}`;
             alert(welcome);
+            location.href = "./projetao/index.html";
         } else {
             alert("Usuário ou senha inválido!");
         }
