@@ -12,16 +12,12 @@ function handleSigninForm(event) {
     const password = document.getElementById("password-field");
     const passwordConfirm = document.getElementById("password-confirm-field");
 
-    user.style.border = "none";
-    password.style.border = "none";
-    passwordConfirm.style.border = "none";
+    const storedUsers = JSON.parse(localStorage.getItem('users')) || {};
+    const userValue = document.getElementById("username-field").value;
 
     if (validateUsername() && validatePassword() && validatePasswordConfirm()) {
-        const userValue = document.getElementById("username-field").value;
         const passwordValue = document.getElementById("password-field").value;
         const typeUserValue = document.getElementById("typeuser-field").value;
-
-        const storedUsers = JSON.parse(localStorage.getItem('users')) || {};
 
         if (storedUsers[userValue]){
             alert("Usuário já existe!");
@@ -41,7 +37,25 @@ function handleSigninForm(event) {
         document.getElementById("password-field").value = "";
         document.getElementById("password-confirm-field").value = "";
 
+        user.style.border = "none";
+        password.style.border = "none";
+        passwordConfirm.style.border = "none";
+
         alert("Usuário cadastrado com sucesso!");
+
+        location.href = "login.html";
+    } else if (storedUsers[userValue]) {
+        alert("Usuário já existe!");
+
+        document.getElementById("username-field").value = "";
+        document.getElementById("password-field").value = "";
+        document.getElementById("password-confirm-field").value = "";
+
+        user.style.border = "none";
+        password.style.border = "none";
+        passwordConfirm.style.border = "none";
+
+        return;
     } else {
         let errorMessage = "";
 
